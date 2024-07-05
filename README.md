@@ -1,3 +1,5 @@
+Sure! Here’s a shorter version of the `README.md`:
+
 ```markdown
 # Store Products Application
 
@@ -67,5 +69,23 @@ A modern web app for managing store products, built with React (frontend) and Ex
 - **GET /api/products:** Fetch all products
 - **POST /api/addProduct:** Add a new product
 
+## Folder Structure
 
+```plaintext
+store-products/
+├── backend/
+│   ├── controllers/
+│   ├── models/
+│   ├── routes/
+│   ├── config/
+│   ├── utils/
+│   ├── .env
+│   ├── server.js
+│   └── package.json
+└── frontend/
+    ├── public/
+    ├── src/
+    ├── .env
+    └── package.json
+```
 

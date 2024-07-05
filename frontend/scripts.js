@@ -5,13 +5,14 @@ let currentPageNotAvailable = 1;
 let totalProductsAll = 0;
 let totalProductsAvailable = 0;
 let totalProductsNotAvailable = 0;
+const base = "https://product-store-api-c40daf4c93ce.herokuapp.com"
 
 document.addEventListener('DOMContentLoaded', function () {
     fetchProducts('all');
 });
 
 function fetchProducts(filter = 'all') {
-    axios.get('https://product-store-api-c40daf4c93ce.herokuapp.com/api/products')
+    axios.get(`${base}/api/products`)
         .then(response => {
             const products = response.data.data;
             const tableBody = document.getElementById('product-table-body');
@@ -104,11 +105,11 @@ document.getElementById('add-product-form').addEventListener('submit', function 
     const price = document.getElementById('product-price').value;
     const available = document.getElementById('product-availability').value;
 
-    axios.post('https://product-store-api-c40daf4c93ce.herokuapp.com/api/products', {
+    axios.post(`${base}/api/addProduct`, {
         name,
         brand,
         price,
-        available: available === 'true'
+        available
     })
         .then(response => {
             $('#addProductModal').modal('hide');

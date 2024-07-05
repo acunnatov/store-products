@@ -14,7 +14,7 @@ Store Products is a web application for managing product data. It includes a fro
 1. **Clone the repository**
 
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/acunnatov/store-products
    cd store-products
    ```
 

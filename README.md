@@ -98,5 +98,5 @@ This is a modern web application for managing store products. The application al
 
 - **GET /api/products**: Fetch all products
 - **POST /api/addProduct**: Add a new product
-
+```
 
